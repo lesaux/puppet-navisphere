@@ -8,7 +8,7 @@ class navisphere {
         owner    => root,
         group    => root,
       }->
-      package { 'navisphere':
+      package { 'NaviCLI-Linux-64-x86-en_US-7.30.15.0.44-2':
         ensure   => installed,
         provider => dpkg,
         source   => '/tmp/NaviCLI-Linux-64-x86-en_US-7.30.15.0.44-2_amd64.deb',
@@ -22,7 +22,7 @@ class navisphere {
         owner    => root,
         group    => root,
       }->
-      package { 'navisphere':
+      package { 'NaviCLI-Linux-64-x86-en_US-7.30.15.0.44-1':
         ensure   => installed,
         provider => rpm,
         source   => '/tmp/NaviCLI-Linux-64-x86-en_US-7.30.15.0.44-1.x86_64.rpm',
