@@ -24,7 +24,7 @@ class navisphere {
       }->
       package { 'navisphere':
         ensure   => installed,
-        provider => dpkg,
+        provider => rpm,
         source   => '/tmp/NaviCLI-Linux-64-x86-en_US-7.30.15.0.44-1.x86_64.rpm',
         unless   => '/usr/bin/test -d /opt/Navisphere/bin/naviseccli',
       }
