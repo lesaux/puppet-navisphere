@@ -8,7 +8,7 @@ class navisphere {
         owner    => root,
         group    => root,
       }->
-      package { 'NaviCLI-Linux-64-x86-en_US-7.30.15.0.44-2':
+      package { 'navicli-linux-64-x86-en-us':
         ensure   => installed,
         provider => dpkg,
         source   => '/tmp/NaviCLI-Linux-64-x86-en_US-7.30.15.0.44-2_amd64.deb',
