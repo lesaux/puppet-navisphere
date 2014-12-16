@@ -21,6 +21,7 @@ class navisphere {
         owner    => root,
         group    => root,
       }->
+      ensure_packages(['glibc.i686','nss-softokn-freebl.i686','nss-softokn-freebl.x86_64'])->
       package { 'NaviCLI-Linux-64-x86-en_US-7.30.15.0.44-1':
         ensure   => installed,
         provider => rpm,
